@@ -13,6 +13,9 @@ node_modules
 dist
 package-lock.json
 
+#tsc
+.tsbuildinfo
+
 # local env files
 .env.local
 .env.*.local
@@ -31,3 +34,6 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# TS Build Info
+.tsbuildinfo
