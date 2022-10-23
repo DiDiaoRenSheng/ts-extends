@@ -1,8 +1,14 @@
+import { Constants } from "../common/constants";
+import { IString } from "../interfaces/string.interface";
+
 //#region String基础原型链扩展方法
 
-// String类型扩展实现
-String.prototype.TestConvert = function () {
-  return this.toString();
+String.prototype.IsEmpty = function IsEmpty() {
+  return this === Constants.STRING_EMPTY;
+};
+
+String.prototype.GetStringExtends = function GetStringExtends() {
+  return new StringExtends(this.valueOf());
 };
 
 //#endregion
